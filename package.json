@@ -1,0 +1,20 @@
+{
+  "name": "com.ryuu.timer",
+  "license": "MIT",
+  "version": "0.1.0",
+  "displayName": "Timer",
+  "unity": "2021.2",
+  "documentationUrl": "https://github.com/Ryuu-64/Timer",
+  "changelogUrl": "https://github.com/Ryuu-64/Timer",
+  "licensesUrl": "https://github.com/Ryuu-64/Timer",
+  "keywords": [
+    "tool",
+    "editor",
+    "hierarchy"
+  ],
+  "author": {
+    "name": "ryuu",
+    "email": "2357622935@qq.com",
+    "url": "https://blog.ryuu64.top/"
+  }
+}
