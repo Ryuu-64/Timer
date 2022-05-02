@@ -15,7 +15,7 @@ namespace Ryuu
         [SerializeField] private float time;
         [SerializeField] private bool isStop;
         public event Action OnStop;
-
+        public float Time => time;
         public bool IsStop => isStop;
 
         public Timer(UpdateMode updateMode, Action onStop = null)
@@ -39,13 +39,14 @@ namespace Ryuu
 
         public Timer SetCountDown()
         {
-            timeStamp = Time.time;
-            time = timeSet;
+            timeStamp = UnityEngine.Time.time;
+            time = 0;
             return this;
         }
 
         public Timer Start()
         {
+            timeStamp = UnityEngine.Time.time + time;
             isStop = false;
             return this;
         }
@@ -57,7 +58,7 @@ namespace Ryuu
                 return;
             }
 
-            time = Time.time - timeStamp;
+            time = UnityEngine.Time.time - timeStamp;
 
             if (time < timeSet)
             {
