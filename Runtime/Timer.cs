@@ -46,7 +46,7 @@ namespace Ryuu
 
         public Timer Start()
         {
-            timeStamp = UnityEngine.Time.time + time;
+            timeStamp = UnityEngine.Time.time - time;
             isStop = false;
             return this;
         }
