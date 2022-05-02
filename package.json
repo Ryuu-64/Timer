@@ -1,7 +1,7 @@
 {
   "name": "com.ryuu.timer",
   "license": "MIT",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "displayName": "Timer",
   "unity": "2021.2",
   "documentationUrl": "https://github.com/Ryuu-64/Timer",
